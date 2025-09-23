@@ -2,8 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,   // ✅ allow Node globals like "process"
-    jest: true,   // ✅ allow Jest globals like "describe", "test", "expect"
+    node: true, // ✅ allow Node globals like "process"
+    jest: true, // ✅ allow Jest globals like "describe", "test", "expect"
   },
   extends: ["eslint:recommended", "plugin:prettier/recommended"],
   parserOptions: {
