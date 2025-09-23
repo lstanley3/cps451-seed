@@ -1,16 +1,13 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es2021: true,
-    node: true, // ✅ allow Node globals like "process"
-    jest: true, // ✅ allow Jest globals like "describe", "test", "expect"
+    jest: true,
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
   parserOptions: {
     ecmaVersion: "latest",
-    sourceType: "module",
+    sourceType: "module", // <-- Add this for ESM
   },
-  rules: {
-    "no-unused-vars": "warn", // just warn if vars aren’t used
-  },
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
 };
