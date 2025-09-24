@@ -3,11 +3,11 @@ module.exports = {
     browser: true,
     node: true,
     es2021: true,
-    jest: true,
+    jest: true, // allow describe/test/expect/jest globals in tests
   },
   parserOptions: {
     ecmaVersion: "latest",
-    sourceType: "module", // <-- Add this for ESM
+    sourceType: "module",
   },
   extends: ["eslint:recommended", "plugin:prettier/recommended"],
 };

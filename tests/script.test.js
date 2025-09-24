@@ -1,13 +1,9 @@
-// Import the script to make sure it runs
-import("../src/script.js");
+import { jest } from "@jest/globals";
 
 describe("script.js", () => {
-  test("should import without throwing errors", async () => {
-    await expect(import("../src/script.js")).resolves.not.toThrow();
-  });
-
-  test("should have side effects like logging Boot message", async () => {
+  test("logs Boot message on import", async () => {
     const logSpy = jest.spyOn(console, "log").mockImplementation(() => {});
+    // Import AFTER spying so we capture the log done at module load
     await import("../src/script.js");
     expect(logSpy).toHaveBeenCalled();
     logSpy.mockRestore();
