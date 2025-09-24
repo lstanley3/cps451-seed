@@ -1,5 +1,12 @@
 # CSP451 Student Seed (Weeks 1–3)
 
+![CI](https://github.com/lstanley3/cps451-seed/actions/workflows/ci.yml/badge.svg)
+![Pages](https://github.com/lstanley3/cps451-seed/actions/workflows/pages.yml/badge.svg)
+![Audit](https://github.com/lstanley3/cps451-seed/actions/workflows/scheduled-audit.yml/badge.svg)
+
+Starter repository for CheckPoints 1–3. Use this to begin your assignments.
+
+
 Starter repository for CheckPoints 1–3. Use this to begin your assignments.
 
 ## Status Badges
