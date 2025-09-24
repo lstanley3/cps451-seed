@@ -1,4 +1,5 @@
 name: CI Pipeline
+
 on:
   push:
     branches: [main, develop]
@@ -27,11 +28,6 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm test -- --coverage
-#      - uses: codecov/codecov-action@v3
-#        with:
-#          file: ./coverage/lcov.info
-#          fail_ci_if_error: true
-#          verbose: true
 
   build:
     runs-on: ubuntu-latest
