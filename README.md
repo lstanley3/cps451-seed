@@ -6,7 +6,6 @@
 
 Starter repository for CheckPoints 1–3. Use this to begin your assignments.
 
-
 Starter repository for CheckPoints 1–3. Use this to begin your assignments.
 
 ## Status Badges
